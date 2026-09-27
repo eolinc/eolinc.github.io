@@ -471,6 +471,54 @@ table.channels .chan-sub {
     border-style: inset;
 }
 
+.explorer-ad-box {
+    border: 2px outset #FFCC00;
+    background-color: #06184A;
+    text-align: center;
+    padding: 8px 6px;
+    margin-bottom: 10px;
+}
+.explorer-ad-box img {
+    display: block;
+    margin: 0 auto 6px auto;
+    width: 56px;
+    height: 56px;
+}
+.explorer-ad-box a {
+    color: #FFCC00;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+.explorer-ad-box a:hover {
+    text-decoration: underline;
+}
+.explorer-ad-box .juke-note {
+    color: #CCDDFF;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+/* ===== EOL EXPLORER BOX ===== */
+.explorer-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid #7788BB;
+    background-color: #DCE4F7;
+    padding: 14px;
+    margin-bottom: 16px;
+}
+.explorer-logo {
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+}
+.explorer-info p {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+}
+
 /* ===== AIM DOWNLOAD PAGE ===== */
 table.aimtable {
     border-collapse: collapse;

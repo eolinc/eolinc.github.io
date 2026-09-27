@@ -114,6 +114,16 @@
             <div class="juke-note">Set the server's playlist in <code>webdeck-player/script.js</code></div>
         </div>
 
+        <div class="channels-header" id="eoltv">EOL.TV &mdash; LIVE ON TWITCH</div>
+        <div class="jukebox-embed">
+            <div id="twitch-embed"></div>
+            <div class="juke-note">
+                Watching a blank box? See the comment inside <code>index.html</code> above the
+                Twitch script &mdash; the <code>parent</code> list needs your site's real domain.
+                <br>Meanwhile: <a href="https://www.twitch.tv/eoltv_" target="_blank" rel="noopener">watch on Twitch directly</a>.
+            </div>
+        </div>
+
         <div class="messages-box">
             <div class="msg-title">Messages from EOL</div>
 
@@ -160,6 +170,14 @@
             <div class="juke-note">dsc.gg/eolinc</div>
         </div>
 
+        <div class="explorer-ad-box">
+            <a href="aim.html#eolexplorer">
+                <img src="images/eol-explorer-logo.png" alt="EOL Explorer - Official Browser">
+                DOWNLOAD<br>EOL EXPLORER
+            </a>
+            <div class="juke-note">Official browser, Win &amp; Android</div>
+        </div>
+
         <div class="ad-box">
             <a href="https://www.aol.com/entertainment/" target="_blank" rel="noopener">
                 <img src="images/ad-cdnow.webp" alt="CDNOW - Buy Music">
@@ -171,6 +189,13 @@
             <br><br>
             <a href="#jukebox">&#9654; Now Playing Below</a>
             <div class="juke-note">Scroll down to listen</div>
+        </div>
+
+        <div class="jukebox-box">
+            EOL.TV
+            <br><br>
+            <a href="#eoltv">&#9679; Watch Live Below</a>
+            <div class="juke-note">Twitch: eoltv_</div>
         </div>
 
         <div class="ad-box">
@@ -205,6 +230,30 @@
     All original trademarks belong to their respective owners. This page recreates the look of a
     1998 web page for nostalgic and community purposes only.
 </div>
+
+<!--
+    TWITCH EMBED - IMPORTANTE:
+    Twitch richiede che ogni dominio dove gira l'embed sia elencato esplicitamente
+    nel parametro "parent" qui sotto, altrimenti il player resta vuoto/nero.
+
+    Sostituisci "INSERISCI-QUI-IL-TUO-DOMINIO" con il dominio ESATTO dove pubblichi
+    il sito (senza "https://" e senza slash finale). Esempi:
+      - GitHub Pages:  "tuonomeutente.github.io"
+      - dominio tuo:   "eol.tv" oppure "www.eol.com"
+
+    Puoi mettere piu' domini nell'array se il sito e' raggiungibile da piu' indirizzi
+    (es. sia "tuonomeutente.github.io" che un dominio personalizzato).
+    Se stai solo testando in locale, aggiungi anche "localhost".
+-->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<script type="text/javascript">
+    new Twitch.Player("twitch-embed", {
+        channel: "eoltv_",
+        width: "100%",
+        height: 400,
+        parent: ["INSERISCI-QUI-IL-TUO-DOMINIO", "localhost"]
+    });
+</script>
 
 </body>
 </html>
