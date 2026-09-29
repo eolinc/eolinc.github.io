@@ -547,3 +547,32 @@ table.aimtable tr:nth-child(even) td {
     height: 28px;
     vertical-align: middle;
 }
+
+/* ===== UNDEAD REICH BOX ===== */
+.undead-box {
+    border: 2px outset #CC0000;
+    background-color: #0A0A0A;
+    text-align: center;
+    padding: 8px 6px;
+    margin-bottom: 10px;
+}
+.undead-box img {
+    display: block;
+    margin: 0 auto 6px auto;
+    width: 96px;
+    height: 96px;
+}
+.undead-box a {
+    color: #FF2A2A;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+.undead-box a:hover {
+    text-decoration: underline;
+}
+.undead-box .juke-note {
+    color: #BBBBBB;
+    font-size: 10px;
+    margin-top: 4px;
+}
